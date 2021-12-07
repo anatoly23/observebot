@@ -7,3 +7,7 @@ venv/
 .DS_Store
 .idea/
 *.env
+.vscode
+*.key
+*.crt
+*.pem

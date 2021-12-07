@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from botamin.views import UpdateBot
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('webhooks/observebot/', UpdateBot.as_view())
 ]
