@@ -18,6 +18,6 @@ from django.urls import path
 from botamin.views import UpdateBot
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('webhooks/observebot/', UpdateBot.as_view())
 ]
