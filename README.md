@@ -11,10 +11,7 @@
 
 Выкидываем бота @myidbot из нашего канала.
 
-Создаем самоподписной сертификат по [инструкции](https://core.telegram.org/bots/self-signed)
-
-С помощю файла **webhooktelegram.html** переключаем бота с режима опроса на режим отправки сообщений на наш URL **webhooks/bot**, не забываем указать порт **443** и наш открытый сертификат.
-
 Скачиваем проект и выполняем pip install -r requirements.txt
 
-Запускаем бота python manage.py runserver_plus 0.0.0.0:443 --cert-file public.pem --key-file private.pem
+Запускаем джанго **_python manage.py runserver 0.0.0.0:8000_**
+Переходим в каталог bot и отдельным процессом запускаем бота **_python bot.py_**
