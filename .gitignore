@@ -11,3 +11,4 @@ venv/
 *.key
 *.crt
 *.pem
+start.ps1
