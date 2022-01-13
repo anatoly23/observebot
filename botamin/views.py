@@ -1,17 +1,11 @@
 import json
 from typing import List
 
-import telebot
 from django.conf import settings
 from django.http import JsonResponse
 from django.views import View
 
 from .models import Word
-
-API_TOKEN = settings.API_TOKEN
-TG_GROUP = settings.TG_GROUP
-
-bot = telebot.TeleBot(API_TOKEN)
 
 
 class UpdateBot(View):
